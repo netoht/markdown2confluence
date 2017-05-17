@@ -1,14 +1,14 @@
-var convert = require('../')
-var demoMarkdown = require('raw-loader!../demo.md')
+var convert = require('../');
+var demoMarkdown = require('raw-loader!../demo.md');
 
 $('#convert').click(function() {
-	var markdown = $('#markdown').val()
-	$('#markup').val(convert(markdown))
+	var markdown = $('#markdown').val();
+	$('#markup').val(convert(markdown));
 })
 
-$(init)
+$(init);
 
 function init() {
-	$('#markdown').val(demoMarkdown)
-	$('#convert').trigger('click')
+	$('#markdown').val(demoMarkdown);
+	$('#convert').trigger('click');
 }
